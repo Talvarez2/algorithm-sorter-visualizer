@@ -8,22 +8,48 @@
 </head>
 <body>
     <div class="container">
-        <h1>Algorithm Sorter Visualizer</h1>
+        <h1>Sorting Algorithm Visualizer</h1>
+        
         <div class="controls">
-            <button id="generate-btn">Generate Array</button>
-            <button id="sort-btn">Sort Array</button>
-            <select id="algorithm-select">
-                <option value="bubble">Bubble Sort</option>
-                <option value="quick">Quick Sort</option>
-                <option value="merge">Merge Sort</option>
-                <option value="insertion">Insertion Sort</option>
-                <option value="selection">Selection Sort</option>
-            </select>
-            <input type="number" id="array-size" min="5" max="100" value="20" />
-            <label for="array-size">Array Size</label>
+            <div class="control-group">
+                <label for="arraySize">Array Size: <span id="sizeValue">50</span></label>
+                <input type="range" id="arraySize" min="5" max="100" value="50">
+            </div>
+            
+            <div class="control-group">
+                <label for="speed">Speed: <span id="speedValue">50</span></label>
+                <input type="range" id="speed" min="1" max="100" value="50">
+            </div>
+            
+            <div class="control-group">
+                <label for="algorithm">Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="heap">Heap Sort</option>
+                    <option value="counting">Counting Sort</option>
+                    <option value="radix">Radix Sort</option>
+                </select>
+            </div>
+            
+            <div class="button-group">
+                <button id="generateBtn">Generate Array</button>
+                <button id="sortBtn">Start Sort</button>
+            </div>
         </div>
-        <div class="visualizer" id="visualizer"></div>
+        
+        <div class="visualization">
+            <div id="arrayContainer"></div>
+        </div>
+        
+        <div class="info">
+            <p id="algorithmInfo">Select an algorithm and click "Generate Array" to begin</p>
+        </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

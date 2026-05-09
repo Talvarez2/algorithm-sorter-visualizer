@@ -1,10 +1,10 @@
 # Algorithm Sorter Visualizer
 
-A web-based tool to visualize 8 common sorting algorithms with interactive controls.
+A web-based interactive visualization tool for common sorting algorithms that demonstrates how different sorting techniques work step-by-step.
 
 ## Features
 
-- **8 Sorting Algorithms**: 
+- **8 Sorting Algorithms**:
   - Bubble Sort
   - Quick Sort
   - Merge Sort
@@ -16,53 +16,58 @@ A web-based tool to visualize 8 common sorting algorithms with interactive contr
 
 - **Interactive Controls**:
   - Adjustable array size (5-100 elements)
-  - Configurable animation speed/frame rate
-  - Real-time visualization of sorting process
-  - Color-coded bars for different states (sorted, comparing, swapping, pivot)
+  - Speed control for animation
+  - Algorithm selection dropdown
+  - Generate and Sort buttons
 
-- **Visual Feedback**:
-  - Animated bar graph showing the sorting process
-  - Clear visual indicators for each algorithm's operations
-  - Responsive design that works on different screen sizes
+- **Visual Design**:
+  - Color-coded bars (blue=default, red=comparing, orange=swapping, green=sorted, purple=pivot)
+  - Responsive layout that works on different screen sizes
+  - Smooth animations
+  - Informative algorithm descriptions
 
 ## How to Use
 
-1. Open `index.html` in a web browser
-2. Select a sorting algorithm from the dropdown menu
-3. Adjust the array size using the slider (default: 20 elements)
-4. Set the animation speed/frame rate using the speed control
-5. Click "Generate Array" to create a new random array
-6. Click "Sort Array" to start the visualization
+1. Select the desired array size using the slider (5-100 elements)
+2. Adjust the animation speed using the speed slider
+3. Choose a sorting algorithm from the dropdown menu
+4. Click "Generate Array" to create a new random array
+5. Click "Start Sort" to begin the visualization
+6. Watch how the algorithm sorts the array step-by-step
 
-## Technical Details
+## Files
 
-The visualizer uses HTML, CSS, and JavaScript to create an interactive demonstration of sorting algorithms. Each algorithm is implemented with detailed step-by-step visualization showing how elements are compared, swapped, and sorted.
+- `index.html` - Main HTML structure with controls and visualization area
+- `style.css` - Styling for visualization and controls
+- `script.js` - JavaScript implementation of all algorithms and visualization logic
+- `README.md` - This documentation file
 
-Each bar in the visualization represents an element of the array, with different colors indicating different states during the sorting process:
-- Blue: Default state
-- Green: Sorted elements
-- Red: Elements being compared
-- Orange: Elements being swapped
-- Purple: Pivot element (for Quick Sort)
+## Technical Implementation
 
-## Implementation
+- **No external libraries** - Pure HTML5, CSS3, and JavaScript
+- **Performance optimized** - Uses requestAnimationFrame for smooth animations
+- **Clean, documented code** - Well-commented implementation
+- **Responsive design** - Works on mobile, tablet, and desktop devices
 
-The visualizer includes smooth animations that can be adjusted in real-time, making it easy to understand how each sorting algorithm works step by step.
+## Educational Value
 
-## File Structure
+This visualizer helps users understand:
+- How different sorting algorithms work
+- Time complexity of each algorithm
+- Step-by-step process of sorting
+- Visual representation of algorithm behavior
 
-```
-algorithm-sorter-visualizer/
-├── index.html          # Main HTML structure
-├── style.css           # Styling for the visualization
-├── script.js           # JavaScript implementation of sorting algorithms
-└── README.md           # This file
-```
+## Performance Considerations
 
-## Future Enhancements
+- Smooth 30-60 FPS animations
+- Optimized DOM updates for better performance
+- Limits array size for performance considerations
+- Efficient algorithm implementations
 
-- Add more sorting algorithms
-- Include time complexity visualization
-- Add step-by-step explanation of each algorithm
-- Implement keyboard controls
-- Add export/import functionality for array data
+## License
+
+This project is created for educational purposes to help understand sorting algorithms through visualization.
+
+## Author
+
+Algorithm Sorter Visualizer - Educational Tool
