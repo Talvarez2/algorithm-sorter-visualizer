@@ -1,0 +1,26 @@
+{
+  "name": "algorithm-sorter-visualizer",
+  "version": "1.0.0",
+  "description": "A web-based visualization tool for common sorting algorithms",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sorting",
+    "algorithms",
+    "visualization",
+    "education",
+    "javascript"
+  ],
+  "author": "Algorithm Visualizer Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/algorithm-sorter-visualizer/issues"
+  },
+  "homepage": "https://github.com/yourusername/algorithm-sorter-visualizer#readme"
+}
